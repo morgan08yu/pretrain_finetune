@@ -1,0 +1,228 @@
+2024-08-04 16:48:58,799 INFO    StreamThr :1607690 [internal.py:wandb_internal():85] W&B internal server running at pid: 1607690, started at: 2024-08-04 16:48:58.799212
+2024-08-04 16:48:58,805 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status
+2024-08-04 16:48:58,810 INFO    WriterThread:1607690 [datastore.py:open_for_write():87] open: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/run-oi69cpa5.wandb
+2024-08-04 16:48:58,811 DEBUG   SenderThread:1607690 [sender.py:send():379] send: header
+2024-08-04 16:48:58,811 DEBUG   SenderThread:1607690 [sender.py:send():379] send: run
+2024-08-04 16:48:59,055 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: check_version
+2024-08-04 16:48:59,060 INFO    SenderThread:1607690 [dir_watcher.py:__init__():211] watching files in: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files
+2024-08-04 16:48:59,060 INFO    SenderThread:1607690 [sender.py:_start_run_threads():1188] run started: oi69cpa5 with start time 1722804538.795869
+2024-08-04 16:48:59,060 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: check_version
+2024-08-04 16:48:59,202 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: run_start
+2024-08-04 16:48:59,220 DEBUG   HandlerThread:1607690 [system_info.py:__init__():26] System info init
+2024-08-04 16:48:59,220 DEBUG   HandlerThread:1607690 [system_info.py:__init__():41] System info init done
+2024-08-04 16:48:59,220 INFO    HandlerThread:1607690 [system_monitor.py:start():194] Starting system monitor
+2024-08-04 16:48:59,221 INFO    HandlerThread:1607690 [system_monitor.py:probe():214] Collecting system info
+2024-08-04 16:48:59,222 INFO    SystemMonitor:1607690 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-04 16:48:59,223 INFO    SystemMonitor:1607690 [interfaces.py:start():188] Started cpu monitoring
+2024-08-04 16:48:59,226 INFO    SystemMonitor:1607690 [interfaces.py:start():188] Started disk monitoring
+2024-08-04 16:48:59,229 INFO    SystemMonitor:1607690 [interfaces.py:start():188] Started gpu monitoring
+2024-08-04 16:48:59,231 INFO    SystemMonitor:1607690 [interfaces.py:start():188] Started memory monitoring
+2024-08-04 16:48:59,234 INFO    SystemMonitor:1607690 [interfaces.py:start():188] Started network monitoring
+2024-08-04 16:48:59,246 DEBUG   HandlerThread:1607690 [system_info.py:probe():152] Probing system
+2024-08-04 16:48:59,615 DEBUG   HandlerThread:1607690 [gitlib.py:_init_repo():56] git repository is invalid
+2024-08-04 16:48:59,615 DEBUG   HandlerThread:1607690 [system_info.py:probe():200] Probing system done
+2024-08-04 16:48:59,615 DEBUG   HandlerThread:1607690 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-08-04T20:48:59.246570', 'startedAt': '2024-08-04T20:48:58.777369', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--deepspeed', 'ds_zero2_no_offload.json', '--model_name_or_path', '/home/devsrc/LLMs/bloom-560m', '--use_lora', 'true', '--use_deepspeed', 'true', '--data_path_name', 'yuanzhoulvpi/rename_robot', '--bf16', 'true', '--fp16', 'false', '--output_dir', 'output_refusev2', '--num_train_epochs', '5', '--per_device_train_batch_size', '3', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '8', '--evaluation_strategy', 'no', '--save_strategy', 'epoch', '--save_total_limit', '3', '--learning_rate', '4e-4', '--logging_steps', '10', '--tf32', 'False', '--model_max_length', '1024'), 'state': 'running', 'program': '/home/devsrc/SFT_3/train_sft.py', 'codePathLocal': 'train_sft.py', 'codePath': 'train_sft.py', 'host': 'Morgan', 'username': 'morgan', 'executable': '/home/morgan/miniconda3/envs/llms_ft/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2688.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 137.32081604003906}}, 'gpu': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.517932891845703}}
+2024-08-04 16:48:59,615 INFO    HandlerThread:1607690 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-04 16:48:59,615 INFO    HandlerThread:1607690 [system_monitor.py:probe():227] Publishing system info
+2024-08-04 16:48:59,615 DEBUG   HandlerThread:1607690 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-04 16:49:00,062 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/conda-environment.yaml
+2024-08-04 16:49:03,545 DEBUG   HandlerThread:1607690 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-04 16:49:03,546 INFO    HandlerThread:1607690 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-04 16:49:03,560 DEBUG   SenderThread:1607690 [sender.py:send():379] send: files
+2024-08-04 16:49:03,560 INFO    SenderThread:1607690 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-04 16:49:03,803 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-04 16:49:03,803 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:49:03,804 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: python_packages
+2024-08-04 16:49:03,805 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:49:03,808 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:03,888 DEBUG   SenderThread:1607690 [sender.py:send():379] send: telemetry
+2024-08-04 16:49:03,888 DEBUG   SenderThread:1607690 [sender.py:send():379] send: config
+2024-08-04 16:49:03,889 DEBUG   SenderThread:1607690 [sender.py:send():379] send: telemetry
+2024-08-04 16:49:03,890 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:03,890 DEBUG   SenderThread:1607690 [sender.py:send():379] send: metric
+2024-08-04 16:49:03,891 DEBUG   SenderThread:1607690 [sender.py:send():379] send: telemetry
+2024-08-04 16:49:03,891 DEBUG   SenderThread:1607690 [sender.py:send():379] send: metric
+2024-08-04 16:49:03,891 WARNING SenderThread:1607690 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-08-04 16:49:03,891 DEBUG   SenderThread:1607690 [sender.py:send():379] send: telemetry
+2024-08-04 16:49:03,944 INFO    wandb-upload_0:1607690 [upload_job.py:push():130] Uploaded file /tmp/tmpwfsm0xpzwandb/n5co82o1-wandb-metadata.json
+2024-08-04 16:49:04,062 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/conda-environment.yaml
+2024-08-04 16:49:04,062 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/requirements.txt
+2024-08-04 16:49:04,062 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:04,062 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/wandb-metadata.json
+2024-08-04 16:49:04,820 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:05,820 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:06,062 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:06,821 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:07,820 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:08,063 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:08,820 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:09,857 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:09,877 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:10,064 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:10,856 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:11,865 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:12,065 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:12,865 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:13,865 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:14,065 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:14,865 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:15,006 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:15,866 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:16,066 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:16,885 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:17,866 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:18,067 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:18,803 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:49:18,803 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:49:18,867 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:19,866 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 16:49:19,871 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:19,871 DEBUG   SenderThread:1607690 [sender.py:send():379] send: metric
+2024-08-04 16:49:19,872 DEBUG   SenderThread:1607690 [sender.py:send():379] send: metric
+2024-08-04 16:49:19,872 DEBUG   SenderThread:1607690 [sender.py:send():379] send: metric
+2024-08-04 16:49:19,873 DEBUG   SenderThread:1607690 [sender.py:send():379] send: metric
+2024-08-04 16:49:19,873 DEBUG   SenderThread:1607690 [sender.py:send():379] send: history
+2024-08-04 16:49:19,873 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 16:49:19,873 INFO    SenderThread:1607690 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 16:49:20,068 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:20,068 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/wandb-summary.json
+2024-08-04 16:49:20,867 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:20,877 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:21,867 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:22,068 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:22,867 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:23,879 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:24,069 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:24,878 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:25,879 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:26,070 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:26,152 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:26,879 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:27,882 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:28,071 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:28,881 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:29,882 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:30,072 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:30,882 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:31,455 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:31,893 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:32,072 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:32,072 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/config.yaml
+2024-08-04 16:49:32,893 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:33,803 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:49:33,804 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:49:33,894 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:34,073 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:34,894 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:35,356 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 16:49:35,361 DEBUG   SenderThread:1607690 [sender.py:send():379] send: history
+2024-08-04 16:49:35,361 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 16:49:35,362 INFO    SenderThread:1607690 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 16:49:35,895 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:36,076 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:36,077 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/wandb-summary.json
+2024-08-04 16:49:36,896 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:37,064 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:37,924 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:38,076 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:38,923 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:39,925 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:40,077 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:40,931 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:41,937 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:42,077 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:42,555 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:42,953 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:43,952 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:44,080 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:44,952 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:45,953 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:46,081 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:46,953 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:47,795 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:47,953 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:48,082 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:48,822 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:49:48,823 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:49:48,953 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:49,953 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:50,083 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:50,916 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 16:49:50,918 DEBUG   SenderThread:1607690 [sender.py:send():379] send: history
+2024-08-04 16:49:50,919 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 16:49:50,919 INFO    SenderThread:1607690 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 16:49:50,973 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:51,083 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/wandb-summary.json
+2024-08-04 16:49:51,974 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:52,083 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:52,974 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:53,345 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:54,025 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:54,084 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:54,994 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:55,994 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:56,085 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:56,994 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:57,994 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:58,085 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:49:58,815 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:49:59,019 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:49:59,234 DEBUG   SystemMonitor:1607690 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-04 16:49:59,238 DEBUG   SenderThread:1607690 [sender.py:send():379] send: stats
+2024-08-04 16:50:00,019 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:00,086 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:01,019 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:02,019 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:02,087 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:03,020 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:03,816 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:50:03,816 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:50:03,817 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:50:04,053 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:04,087 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:05,054 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:06,055 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:06,088 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:07,058 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:07,346 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 16:50:07,348 DEBUG   SenderThread:1607690 [sender.py:send():379] send: history
+2024-08-04 16:50:07,348 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 16:50:07,349 INFO    SenderThread:1607690 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 16:50:08,055 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:08,089 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:08,089 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/wandb-summary.json
+2024-08-04 16:50:08,817 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:50:09,105 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:10,090 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:10,105 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:11,106 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:12,091 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:12,105 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:13,105 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:13,822 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:50:14,091 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:14,106 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:15,106 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:16,093 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:16,106 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:17,106 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:18,094 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:18,106 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:18,816 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:50:18,816 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:50:18,918 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:50:19,107 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:20,094 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:20,107 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:21,107 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:22,095 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:22,108 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:23,126 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:23,656 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 16:50:23,658 DEBUG   SenderThread:1607690 [sender.py:send():379] send: history
+2024-08-04 16:50:23,658 DEBUG   SenderThread:1607690 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 16:50:23,659 INFO    SenderThread:1607690 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 16:50:24,096 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/output.log
+2024-08-04 16:50:24,096 INFO    Thread-17 :1607690 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164858-oi69cpa5/files/wandb-summary.json
+2024-08-04 16:50:24,126 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:50:24,823 DEBUG   HandlerThread:1607690 [handler.py:handle_request():158] handle_request: status_report
