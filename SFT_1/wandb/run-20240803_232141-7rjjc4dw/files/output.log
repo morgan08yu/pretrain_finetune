@@ -1,0 +1,27 @@
+
+  0%|                                                                                                                                                                                                                                            | 0/918 [00:00<?, ?it/s][WARNING|logging.py:329] 2024-08-03 23:21:46,720 >> The input hidden states seems to be silently casted in float32, this might be related to the fact you have upcasted embedding or layer norm layers in float32. We will cast back the input in torch.bfloat16.
+  0%|▏                                                                                                                                                                                                                                 | 1/918 [00:06<1:41:08,  6.62s/it]
+
+
+
+  0%|▉                                                                                                                                                                                                                                 | 4/918 [00:22<1:23:22,  5.47s/it]Traceback (most recent call last):
+  File "/home/devsrc/SFT_1/run_sft.py", line 271, in <module>
+    main()
+  File "/home/devsrc/SFT_1/run_sft.py", line 244, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/transformers/trainer.py", line 2216, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/transformers/trainer.py", line 3250, in training_step
+    self.accelerator.backward(loss)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/accelerate/accelerator.py", line 1966, in backward
+    loss.backward(**kwargs)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

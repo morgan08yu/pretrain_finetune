@@ -1,0 +1,242 @@
+2024-08-03 21:15:10,972 INFO    StreamThr :1280045 [internal.py:wandb_internal():85] W&B internal server running at pid: 1280045, started at: 2024-08-03 21:15:10.972438
+2024-08-03 21:15:10,974 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status
+2024-08-03 21:15:10,976 INFO    WriterThread:1280045 [datastore.py:open_for_write():87] open: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/run-45vbemtv.wandb
+2024-08-03 21:15:10,976 DEBUG   SenderThread:1280045 [sender.py:send():379] send: header
+2024-08-03 21:15:10,976 DEBUG   SenderThread:1280045 [sender.py:send():379] send: run
+2024-08-03 21:15:11,372 INFO    SenderThread:1280045 [dir_watcher.py:__init__():211] watching files in: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files
+2024-08-03 21:15:11,372 INFO    SenderThread:1280045 [sender.py:_start_run_threads():1188] run started: 45vbemtv with start time 1722734110.972257
+2024-08-03 21:15:11,372 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: check_version
+2024-08-03 21:15:11,373 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: check_version
+2024-08-03 21:15:11,503 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: run_start
+2024-08-03 21:15:11,531 DEBUG   HandlerThread:1280045 [system_info.py:__init__():26] System info init
+2024-08-03 21:15:11,531 DEBUG   HandlerThread:1280045 [system_info.py:__init__():41] System info init done
+2024-08-03 21:15:11,531 INFO    HandlerThread:1280045 [system_monitor.py:start():194] Starting system monitor
+2024-08-03 21:15:11,532 INFO    SystemMonitor:1280045 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-03 21:15:11,532 INFO    HandlerThread:1280045 [system_monitor.py:probe():214] Collecting system info
+2024-08-03 21:15:11,533 INFO    SystemMonitor:1280045 [interfaces.py:start():188] Started cpu monitoring
+2024-08-03 21:15:11,535 INFO    SystemMonitor:1280045 [interfaces.py:start():188] Started disk monitoring
+2024-08-03 21:15:11,536 INFO    SystemMonitor:1280045 [interfaces.py:start():188] Started gpu monitoring
+2024-08-03 21:15:11,536 INFO    SystemMonitor:1280045 [interfaces.py:start():188] Started memory monitoring
+2024-08-03 21:15:11,536 INFO    SystemMonitor:1280045 [interfaces.py:start():188] Started network monitoring
+2024-08-03 21:15:11,551 DEBUG   HandlerThread:1280045 [system_info.py:probe():152] Probing system
+2024-08-03 21:15:11,888 DEBUG   HandlerThread:1280045 [gitlib.py:_init_repo():56] git repository is invalid
+2024-08-03 21:15:11,888 DEBUG   HandlerThread:1280045 [system_info.py:probe():200] Probing system done
+2024-08-03 21:15:11,888 DEBUG   HandlerThread:1280045 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-08-04T01:15:11.551225', 'startedAt': '2024-08-04T01:15:10.964722', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', '/home/devsrc/LLMs/meta-llama3-8b', '--tokenizer_name_or_path', '/home/devsrc/LLMs/meta-llama3-8b', '--dataset_dir', '/home/devsrc/pt/data/', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--do_train', '--seed', '1234', '--bf16', '--num_train_epochs', '3', '--lr_scheduler_type', 'cosine', '--learning_rate', '1e-4', '--warmup_ratio', '0.03', '--logging_strategy', 'steps', '--logging_steps', '10', '--save_strategy', 'steps', '--save_total_limit', '3', '--evaluation_strategy', 'steps', '--eval_steps', '100', '--save_steps', '200', '--gradient_accumulation_steps', '8', '--preprocessing_num_workers', '8', '--max_seq_length', '1024', '--output_dir', 'output_dir', '--overwrite_output_dir', '--ddp_timeout', '30000', '--logging_first_step', 'True', '--lora_rank', '8', '--lora_alpha', '32', '--trainable', 'q_proj,v_proj,k_proj,o_proj,gate_proj,down_proj,up_proj', '--lora_dropout', '0.05', '--modules_to_save', 'None', '--torch_dtype', 'bfloat16', '--load_in_kbits', '4', '--ddp_find_unused_parameters', 'False'), 'state': 'running', 'program': '/home/devsrc/pt/run_sft.py', 'codePathLocal': 'run_sft.py', 'codePath': 'run_sft.py', 'host': 'Morgan', 'username': 'morgan', 'executable': '/home/morgan/miniconda3/envs/llms_ft/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2688.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 133.2068634033203}}, 'gpu': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.517932891845703}}
+2024-08-03 21:15:11,888 INFO    HandlerThread:1280045 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-03 21:15:11,888 INFO    HandlerThread:1280045 [system_monitor.py:probe():227] Publishing system info
+2024-08-03 21:15:11,888 DEBUG   HandlerThread:1280045 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-03 21:15:12,372 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/conda-environment.yaml
+2024-08-03 21:15:16,324 DEBUG   HandlerThread:1280045 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-03 21:15:16,325 INFO    HandlerThread:1280045 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-03 21:15:16,334 DEBUG   SenderThread:1280045 [sender.py:send():379] send: files
+2024-08-03 21:15:16,334 INFO    SenderThread:1280045 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-03 21:15:16,334 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:16,373 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/conda-environment.yaml
+2024-08-03 21:15:16,373 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/wandb-metadata.json
+2024-08-03 21:15:16,439 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-03 21:15:16,439 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:15:16,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: python_packages
+2024-08-03 21:15:16,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:15:16,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:16,618 DEBUG   SenderThread:1280045 [sender.py:send():379] send: telemetry
+2024-08-03 21:15:16,618 DEBUG   SenderThread:1280045 [sender.py:send():379] send: config
+2024-08-03 21:15:16,619 DEBUG   SenderThread:1280045 [sender.py:send():379] send: metric
+2024-08-03 21:15:16,619 DEBUG   SenderThread:1280045 [sender.py:send():379] send: telemetry
+2024-08-03 21:15:16,619 DEBUG   SenderThread:1280045 [sender.py:send():379] send: telemetry
+2024-08-03 21:15:16,619 DEBUG   SenderThread:1280045 [sender.py:send():379] send: metric
+2024-08-03 21:15:16,619 WARNING SenderThread:1280045 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-08-03 21:15:16,619 DEBUG   SenderThread:1280045 [sender.py:send():379] send: telemetry
+2024-08-03 21:15:16,703 INFO    wandb-upload_0:1280045 [upload_job.py:push():130] Uploaded file /tmp/tmpi4521z99wandb/yfqem1ik-wandb-metadata.json
+2024-08-03 21:15:17,373 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/requirements.txt
+2024-08-03 21:15:17,373 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:17,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:18,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:19,374 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:19,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:20,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:21,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:21,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:21,772 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-03 21:15:21,774 DEBUG   SenderThread:1280045 [sender.py:send():379] send: metric
+2024-08-03 21:15:21,774 DEBUG   SenderThread:1280045 [sender.py:send():379] send: metric
+2024-08-03 21:15:21,774 DEBUG   SenderThread:1280045 [sender.py:send():379] send: metric
+2024-08-03 21:15:21,774 DEBUG   SenderThread:1280045 [sender.py:send():379] send: metric
+2024-08-03 21:15:21,774 DEBUG   SenderThread:1280045 [sender.py:send():379] send: history
+2024-08-03 21:15:21,774 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: summary_record
+2024-08-03 21:15:21,775 INFO    SenderThread:1280045 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-03 21:15:22,374 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/wandb-summary.json
+2024-08-03 21:15:22,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:23,375 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:23,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:24,375 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:24,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:25,501 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:26,501 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:27,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:27,501 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:28,501 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:29,377 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:29,525 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:30,525 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:31,439 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:15:31,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:15:31,526 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:32,526 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:32,569 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:33,378 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:33,538 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:34,538 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:35,538 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:36,538 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:37,383 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:37,538 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:38,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:38,539 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:39,539 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:40,539 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:41,539 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:42,539 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:43,385 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:43,540 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:44,444 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:44,540 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:45,385 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/config.yaml
+2024-08-03 21:15:45,540 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:46,439 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:15:46,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:15:46,541 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:47,386 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:47,541 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:48,541 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:49,541 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:49,663 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:50,541 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:51,387 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:51,541 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:52,557 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:53,557 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:54,557 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:55,557 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:55,658 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:15:56,558 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:57,390 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:15:57,558 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:58,558 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:15:59,558 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:00,558 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:00,792 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:01,392 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:16:01,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:16:01,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:16:01,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:02,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:03,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:04,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:04,712 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-03 21:16:04,713 DEBUG   SenderThread:1280045 [sender.py:send():379] send: history
+2024-08-03 21:16:04,715 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: summary_record
+2024-08-03 21:16:04,716 INFO    SenderThread:1280045 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-03 21:16:05,393 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/wandb-summary.json
+2024-08-03 21:16:05,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:06,393 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:16:06,442 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:06,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:07,394 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:16:07,559 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:08,560 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:09,560 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:10,560 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:11,395 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:16:11,536 DEBUG   SystemMonitor:1280045 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-03 21:16:11,539 DEBUG   SenderThread:1280045 [sender.py:send():379] send: stats
+2024-08-03 21:16:11,539 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:11,560 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:12,565 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:13,566 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:14,565 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:15,565 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:16,441 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:16:16,442 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:16:16,565 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:16,603 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:17,397 INFO    Thread-12 :1280045 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/output.log
+2024-08-03 21:16:17,569 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:18,570 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:19,570 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:20,571 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:21,570 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:22,442 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:22,571 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:23,571 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:24,580 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:25,580 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:26,580 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:27,443 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:27,580 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:28,580 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:29,581 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:30,581 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:31,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:16:31,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:16:31,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:32,502 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:32,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:33,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:34,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:35,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:36,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:37,585 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:38,358 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:38,586 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:39,586 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:40,586 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:41,538 DEBUG   SenderThread:1280045 [sender.py:send():379] send: stats
+2024-08-03 21:16:41,586 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:42,645 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:43,645 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:43,930 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:44,645 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:45,645 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:46,440 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-03 21:16:46,440 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: stop_status
+2024-08-03 21:16:46,698 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:47,698 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:48,699 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:49,606 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: status_report
+2024-08-03 21:16:49,699 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:50,699 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:51,699 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:52,682 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-03 21:16:52,683 DEBUG   SenderThread:1280045 [sender.py:send():379] send: history
+2024-08-03 21:16:52,683 DEBUG   SenderThread:1280045 [sender.py:send_request():406] send_request: summary_record
+2024-08-03 21:16:52,700 DEBUG   HandlerThread:1280045 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-03 21:16:52,701 INFO    HandlerThread:1280045 [handler.py:finish():882] shutting down handler
+2024-08-03 21:16:52,701 INFO    HandlerThread:1280045 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-03 21:16:52,701 DEBUG   SystemMonitor:1280045 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-03 21:16:52,701 DEBUG   SystemMonitor:1280045 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-03 21:16:52,702 INFO    HandlerThread:1280045 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-03 21:16:52,702 INFO    HandlerThread:1280045 [interfaces.py:finish():200] Joined disk monitor
+2024-08-03 21:16:52,733 INFO    HandlerThread:1280045 [interfaces.py:finish():200] Joined gpu monitor
+2024-08-03 21:16:52,733 INFO    HandlerThread:1280045 [interfaces.py:finish():200] Joined memory monitor
+2024-08-03 21:16:52,734 INFO    HandlerThread:1280045 [interfaces.py:finish():200] Joined network monitor
+2024-08-03 21:16:53,683 INFO    WriterThread:1280045 [datastore.py:close():296] close: /home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/run-45vbemtv.wandb
+2024-08-03 21:16:53,684 ERROR   StreamThr :1280045 [internal.py:wandb_internal():173] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 48, in run
+    self._run()
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 99, in _run
+    self._process(record)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/internal.py", line 327, in _process
+    self._sm.send(record)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 386, in send
+    send_handler(record)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 408, in send_request
+    send_handler(record)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 1212, in send_request_summary_record
+    self._update_summary_record(record.request.summary_record.summary)
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 1206, in _update_summary_record
+    self._update_summary()
+  File "/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 1226, in _update_summary
+    with open(summary_path, "w") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/devsrc/pt/wandb/run-20240803_211510-45vbemtv/files/wandb-summary.json'

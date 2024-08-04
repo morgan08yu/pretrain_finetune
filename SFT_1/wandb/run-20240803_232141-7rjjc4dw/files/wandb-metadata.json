@@ -1,0 +1,212 @@
+{
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.11.8",
+    "heartbeatAt": "2024-08-04T03:21:41.744587",
+    "startedAt": "2024-08-04T03:21:41.280076",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name_or_path",
+        "/home/devsrc/LLMs/meta-llama3-8b",
+        "--tokenizer_name_or_path",
+        "/home/devsrc/LLMs/meta-llama3-8b",
+        "--dataset_dir",
+        "/home/devsrc/SFT_1/data/",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "1",
+        "--do_train",
+        "--seed",
+        "1234",
+        "--bf16",
+        "--num_train_epochs",
+        "3",
+        "--lr_scheduler_type",
+        "cosine",
+        "--learning_rate",
+        "1e-4",
+        "--warmup_ratio",
+        "0.03",
+        "--logging_strategy",
+        "steps",
+        "--logging_steps",
+        "10",
+        "--save_strategy",
+        "steps",
+        "--save_total_limit",
+        "3",
+        "--evaluation_strategy",
+        "steps",
+        "--eval_steps",
+        "100",
+        "--save_steps",
+        "200",
+        "--gradient_accumulation_steps",
+        "8",
+        "--preprocessing_num_workers",
+        "8",
+        "--max_seq_length",
+        "1024",
+        "--output_dir",
+        "output_dir",
+        "--overwrite_output_dir",
+        "--ddp_timeout",
+        "30000",
+        "--logging_first_step",
+        "True",
+        "--lora_rank",
+        "8",
+        "--lora_alpha",
+        "32",
+        "--trainable",
+        "q_proj,v_proj,k_proj,o_proj,gate_proj,down_proj,up_proj",
+        "--lora_dropout",
+        "0.05",
+        "--modules_to_save",
+        "None",
+        "--torch_dtype",
+        "bfloat16",
+        "--load_in_kbits",
+        "4",
+        "--ddp_find_unused_parameters",
+        "False"
+    ],
+    "state": "running",
+    "program": "/home/devsrc/SFT_1/run_sft.py",
+    "codePathLocal": "run_sft.py",
+    "codePath": "run_sft.py",
+    "host": "Morgan",
+    "username": "morgan",
+    "executable": "/home/morgan/miniconda3/envs/llms_ft/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2688.0,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 133.21380996704102
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+            "memory_total": 8589934592
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 15.517932891845703
+    }
+}

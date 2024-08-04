@@ -1,0 +1,22 @@
+  0%|                                                                                                                                                                                                                                                   | 0/918 [00:00<?, ?it/s]/home/morgan/miniconda3/envs/llms_ft/lib/python3.11/site-packages/transformers/data/data_collator.py:646: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+  0%|▎                                                                                                                                                                                                                                        | 1/918 [00:05<1:20:31,  5.27s/it]
+
+
+
+
+
+
+
+
+  1%|██▎                                                                                                                                                                                                                                      | 9/918 [00:43<1:14:15,  4.90s/it]
+
+
+
+
+
+
+
+
+
+
