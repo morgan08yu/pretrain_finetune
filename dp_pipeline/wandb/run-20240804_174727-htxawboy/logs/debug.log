@@ -1,0 +1,22 @@
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Current SDK version is 0.17.5
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Configure stats pid to 1674440
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Loading settings from /home/morgan/.config/wandb/settings
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Loading settings from /home/devsrc/SFT_3/wandb/settings
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_sft.py', 'program_abspath': '/home/devsrc/SFT_3/train_sft.py', 'program': '/home/devsrc/SFT_3/train_sft.py'}
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_init.py:_log_setup():529] Logging user logs to /home/devsrc/SFT_3/wandb/run-20240804_174727-htxawboy/logs/debug.log
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_init.py:_log_setup():530] Logging internal logs to /home/devsrc/SFT_3/wandb/run-20240804_174727-htxawboy/logs/debug-internal.log
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_init.py:init():569] calling init triggers
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_init.py:init():619] starting backend
+2024-08-04 17:47:27,152 INFO    MainThread:1674440 [wandb_init.py:init():623] setting up manager
+2024-08-04 17:47:27,153 INFO    MainThread:1674440 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-08-04 17:47:27,155 INFO    MainThread:1674440 [wandb_init.py:init():631] backend started and connected
+2024-08-04 17:47:27,156 INFO    MainThread:1674440 [wandb_init.py:init():720] updated telemetry
+2024-08-04 17:47:27,156 INFO    MainThread:1674440 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-08-04 17:47:27,500 INFO    MainThread:1674440 [wandb_run.py:_on_init():2435] communicating current version
+2024-08-04 17:47:27,627 INFO    MainThread:1674440 [wandb_run.py:_on_init():2444] got version response 
+2024-08-04 17:47:27,627 INFO    MainThread:1674440 [wandb_init.py:init():804] starting run threads in backend

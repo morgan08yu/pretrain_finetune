@@ -1,0 +1,98 @@
+2024-08-04 16:46:55,628 INFO    StreamThr :1603986 [internal.py:wandb_internal():85] W&B internal server running at pid: 1603986, started at: 2024-08-04 16:46:55.628129
+2024-08-04 16:46:55,636 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: status
+2024-08-04 16:46:55,638 INFO    WriterThread:1603986 [datastore.py:open_for_write():87] open: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/run-rls623qs.wandb
+2024-08-04 16:46:55,639 DEBUG   SenderThread:1603986 [sender.py:send():379] send: header
+2024-08-04 16:46:55,639 DEBUG   SenderThread:1603986 [sender.py:send():379] send: run
+2024-08-04 16:46:55,968 INFO    SenderThread:1603986 [dir_watcher.py:__init__():211] watching files in: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files
+2024-08-04 16:46:55,968 INFO    SenderThread:1603986 [sender.py:_start_run_threads():1188] run started: rls623qs with start time 1722804415.624899
+2024-08-04 16:46:55,968 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: check_version
+2024-08-04 16:46:55,969 DEBUG   SenderThread:1603986 [sender.py:send_request():406] send_request: check_version
+2024-08-04 16:46:56,145 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: run_start
+2024-08-04 16:46:56,169 DEBUG   HandlerThread:1603986 [system_info.py:__init__():26] System info init
+2024-08-04 16:46:56,169 DEBUG   HandlerThread:1603986 [system_info.py:__init__():41] System info init done
+2024-08-04 16:46:56,169 INFO    HandlerThread:1603986 [system_monitor.py:start():194] Starting system monitor
+2024-08-04 16:46:56,170 INFO    HandlerThread:1603986 [system_monitor.py:probe():214] Collecting system info
+2024-08-04 16:46:56,170 INFO    SystemMonitor:1603986 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-04 16:46:56,173 INFO    SystemMonitor:1603986 [interfaces.py:start():188] Started cpu monitoring
+2024-08-04 16:46:56,176 INFO    SystemMonitor:1603986 [interfaces.py:start():188] Started disk monitoring
+2024-08-04 16:46:56,179 INFO    SystemMonitor:1603986 [interfaces.py:start():188] Started gpu monitoring
+2024-08-04 16:46:56,181 INFO    SystemMonitor:1603986 [interfaces.py:start():188] Started memory monitoring
+2024-08-04 16:46:56,183 INFO    SystemMonitor:1603986 [interfaces.py:start():188] Started network monitoring
+2024-08-04 16:46:56,195 DEBUG   HandlerThread:1603986 [system_info.py:probe():152] Probing system
+2024-08-04 16:46:56,531 DEBUG   HandlerThread:1603986 [gitlib.py:_init_repo():56] git repository is invalid
+2024-08-04 16:46:56,532 DEBUG   HandlerThread:1603986 [system_info.py:probe():200] Probing system done
+2024-08-04 16:46:56,532 DEBUG   HandlerThread:1603986 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-08-04T20:46:56.195537', 'startedAt': '2024-08-04T20:46:55.605484', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--deepspeed', 'ds_zero2_no_offload.json', '--model_name_or_path', '/home/devsrc/LLMs/bloom-560m', '--use_lora', 'true', '--use_deepspeed', 'true', '--data_path_name', 'yuanzhoulvpi/rename_robot', '--bf16', 'true', '--fp16', 'false', '--output_dir', 'output_refusev2', '--num_train_epochs', '5', '--per_device_train_batch_size', '3', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '8', '--evaluation_strategy', 'no', '--save_strategy', 'epoch', '--save_total_limit', '3', '--learning_rate', '4e-4', '--logging_steps', '10', '--tf32', 'False', '--model_max_length', '1024'), 'state': 'running', 'program': '/home/devsrc/SFT_3/train_sft.py', 'codePathLocal': 'train_sft.py', 'codePath': 'train_sft.py', 'host': 'Morgan', 'username': 'morgan', 'executable': '/home/morgan/miniconda3/envs/llms_ft/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2688.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 137.29878997802734}}, 'gpu': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.517932891845703}}
+2024-08-04 16:46:56,532 INFO    HandlerThread:1603986 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-04 16:46:56,532 INFO    HandlerThread:1603986 [system_monitor.py:probe():227] Publishing system info
+2024-08-04 16:46:56,532 DEBUG   HandlerThread:1603986 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-04 16:46:56,969 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/conda-environment.yaml
+2024-08-04 16:47:00,310 DEBUG   HandlerThread:1603986 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-04 16:47:00,312 INFO    HandlerThread:1603986 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-04 16:47:00,328 DEBUG   SenderThread:1603986 [sender.py:send():379] send: files
+2024-08-04 16:47:00,328 INFO    SenderThread:1603986 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-04 16:47:00,582 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-04 16:47:00,583 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:47:00,584 DEBUG   SenderThread:1603986 [sender.py:send_request():406] send_request: python_packages
+2024-08-04 16:47:00,585 DEBUG   SenderThread:1603986 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:47:00,585 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:00,831 DEBUG   SenderThread:1603986 [sender.py:send():379] send: telemetry
+2024-08-04 16:47:00,832 DEBUG   SenderThread:1603986 [sender.py:send():379] send: config
+2024-08-04 16:47:00,833 DEBUG   SenderThread:1603986 [sender.py:send():379] send: telemetry
+2024-08-04 16:47:00,833 DEBUG   SenderThread:1603986 [sender.py:send():379] send: metric
+2024-08-04 16:47:00,834 DEBUG   SenderThread:1603986 [sender.py:send():379] send: telemetry
+2024-08-04 16:47:00,834 DEBUG   SenderThread:1603986 [sender.py:send():379] send: metric
+2024-08-04 16:47:00,834 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:47:00,834 WARNING SenderThread:1603986 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-08-04 16:47:00,835 DEBUG   SenderThread:1603986 [sender.py:send():379] send: telemetry
+2024-08-04 16:47:00,938 INFO    wandb-upload_0:1603986 [upload_job.py:push():130] Uploaded file /tmp/tmpx5j219s8wandb/mx8o8nkg-wandb-metadata.json
+2024-08-04 16:47:00,970 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/conda-environment.yaml
+2024-08-04 16:47:00,970 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:00,970 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/wandb-metadata.json
+2024-08-04 16:47:00,970 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/requirements.txt
+2024-08-04 16:47:01,585 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:02,615 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:02,970 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:03,635 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:04,635 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:04,971 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:05,635 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:06,635 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:06,734 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:47:06,971 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:07,636 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:08,638 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:08,972 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:09,637 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:10,636 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:10,973 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:11,637 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:12,106 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:47:12,638 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:12,974 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:13,637 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:14,638 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:14,974 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:15,582 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 16:47:15,582 DEBUG   SenderThread:1603986 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 16:47:15,638 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:16,638 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:16,975 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:17,330 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 16:47:17,376 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 16:47:17,380 DEBUG   SenderThread:1603986 [sender.py:send():379] send: metric
+2024-08-04 16:47:17,380 DEBUG   SenderThread:1603986 [sender.py:send():379] send: metric
+2024-08-04 16:47:17,380 DEBUG   SenderThread:1603986 [sender.py:send():379] send: metric
+2024-08-04 16:47:17,380 DEBUG   SenderThread:1603986 [sender.py:send():379] send: metric
+2024-08-04 16:47:17,380 DEBUG   SenderThread:1603986 [sender.py:send():379] send: history
+2024-08-04 16:47:17,381 DEBUG   SenderThread:1603986 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 16:47:17,381 INFO    SenderThread:1603986 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 16:47:17,638 DEBUG   HandlerThread:1603986 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 16:47:17,976 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/wandb-summary.json
+2024-08-04 16:47:18,189 INFO    cpu       :1603986 [interfaces.py:monitor():138] Process cpu has exited.
+2024-08-04 16:47:18,189 DEBUG   SystemMonitor:1603986 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-04 16:47:18,190 DEBUG   SystemMonitor:1603986 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-04 16:47:18,191 DEBUG   SystemMonitor:1603986 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-04 16:47:18,195 DEBUG   SenderThread:1603986 [sender.py:send():379] send: stats
+2024-08-04 16:47:18,976 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log
+2024-08-04 16:47:19,884 INFO    MainThread:1603986 [internal.py:handle_exit():75] Internal process exited
+2024-08-04 16:47:19,978 INFO    Thread-17 :1603986 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_164655-rls623qs/files/output.log

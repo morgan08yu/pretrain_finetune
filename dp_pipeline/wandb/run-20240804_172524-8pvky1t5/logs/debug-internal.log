@@ -1,0 +1,9 @@
+2024-08-04 17:25:24,023 INFO    StreamThr :1640701 [internal.py:wandb_internal():85] W&B internal server running at pid: 1640701, started at: 2024-08-04 17:25:24.023421
+2024-08-04 17:25:24,025 DEBUG   HandlerThread:1640701 [handler.py:handle_request():158] handle_request: status
+2024-08-04 17:25:24,029 INFO    WriterThread:1640701 [datastore.py:open_for_write():87] open: /home/devsrc/SFT_3/wandb/run-20240804_172524-8pvky1t5/run-8pvky1t5.wandb
+2024-08-04 17:25:24,030 DEBUG   SenderThread:1640701 [sender.py:send():379] send: header
+2024-08-04 17:25:24,031 DEBUG   SenderThread:1640701 [sender.py:send():379] send: run
+2024-08-04 17:25:24,318 INFO    SenderThread:1640701 [dir_watcher.py:__init__():211] watching files in: /home/devsrc/SFT_3/wandb/run-20240804_172524-8pvky1t5/files
+2024-08-04 17:25:24,318 INFO    SenderThread:1640701 [sender.py:_start_run_threads():1188] run started: 8pvky1t5 with start time 1722806724.024298
+2024-08-04 17:25:24,320 DEBUG   HandlerThread:1640701 [handler.py:handle_request():158] handle_request: check_version
+2024-08-04 17:25:24,320 DEBUG   SenderThread:1640701 [sender.py:send_request():406] send_request: check_version

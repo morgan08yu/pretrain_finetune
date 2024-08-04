@@ -1,0 +1,5 @@
+2024-08-04 17:29:53,119 INFO    StreamThr :1645733 [internal.py:wandb_internal():85] W&B internal server running at pid: 1645733, started at: 2024-08-04 17:29:53.119169
+2024-08-04 17:29:53,121 DEBUG   HandlerThread:1645733 [handler.py:handle_request():158] handle_request: status
+2024-08-04 17:29:53,122 INFO    WriterThread:1645733 [datastore.py:open_for_write():87] open: /home/devsrc/SFT_3/wandb/run-20240804_172953-03sbzusm/run-03sbzusm.wandb
+2024-08-04 17:29:53,123 DEBUG   SenderThread:1645733 [sender.py:send():379] send: header
+2024-08-04 17:29:53,123 DEBUG   SenderThread:1645733 [sender.py:send():379] send: run

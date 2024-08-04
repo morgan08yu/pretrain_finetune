@@ -1,0 +1,21 @@
+2024-08-04 17:48:35,077 INFO    StreamThr :1677082 [internal.py:wandb_internal():85] W&B internal server running at pid: 1677082, started at: 2024-08-04 17:48:35.077214
+2024-08-04 17:48:35,079 DEBUG   HandlerThread:1677082 [handler.py:handle_request():158] handle_request: status
+2024-08-04 17:48:35,083 INFO    WriterThread:1677082 [datastore.py:open_for_write():87] open: /home/devsrc/SFT_3/wandb/run-20240804_174835-hcj75jhg/run-hcj75jhg.wandb
+2024-08-04 17:48:35,084 DEBUG   SenderThread:1677082 [sender.py:send():379] send: header
+2024-08-04 17:48:35,086 DEBUG   SenderThread:1677082 [sender.py:send():379] send: run
+2024-08-04 17:48:35,437 INFO    SenderThread:1677082 [dir_watcher.py:__init__():211] watching files in: /home/devsrc/SFT_3/wandb/run-20240804_174835-hcj75jhg/files
+2024-08-04 17:48:35,437 INFO    SenderThread:1677082 [sender.py:_start_run_threads():1188] run started: hcj75jhg with start time 1722808115.079505
+2024-08-04 17:48:35,450 DEBUG   HandlerThread:1677082 [handler.py:handle_request():158] handle_request: check_version
+2024-08-04 17:48:35,451 DEBUG   SenderThread:1677082 [sender.py:send_request():406] send_request: check_version
+2024-08-04 17:48:35,603 DEBUG   HandlerThread:1677082 [handler.py:handle_request():158] handle_request: run_start
+2024-08-04 17:48:35,648 DEBUG   HandlerThread:1677082 [system_info.py:__init__():26] System info init
+2024-08-04 17:48:35,648 DEBUG   HandlerThread:1677082 [system_info.py:__init__():41] System info init done
+2024-08-04 17:48:35,648 INFO    HandlerThread:1677082 [system_monitor.py:start():194] Starting system monitor
+2024-08-04 17:48:35,648 INFO    SystemMonitor:1677082 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-04 17:48:35,648 INFO    HandlerThread:1677082 [system_monitor.py:probe():214] Collecting system info
+2024-08-04 17:48:35,649 INFO    SystemMonitor:1677082 [interfaces.py:start():188] Started cpu monitoring
+2024-08-04 17:48:35,651 INFO    SystemMonitor:1677082 [interfaces.py:start():188] Started disk monitoring
+2024-08-04 17:48:35,651 INFO    SystemMonitor:1677082 [interfaces.py:start():188] Started gpu monitoring
+2024-08-04 17:48:35,652 INFO    SystemMonitor:1677082 [interfaces.py:start():188] Started memory monitoring
+2024-08-04 17:48:35,652 INFO    SystemMonitor:1677082 [interfaces.py:start():188] Started network monitoring
+2024-08-04 17:48:35,667 DEBUG   HandlerThread:1677082 [system_info.py:probe():152] Probing system

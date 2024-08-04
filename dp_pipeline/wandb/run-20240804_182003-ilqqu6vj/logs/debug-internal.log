@@ -1,0 +1,99 @@
+2024-08-04 18:20:03,366 INFO    StreamThr :1704914 [internal.py:wandb_internal():85] W&B internal server running at pid: 1704914, started at: 2024-08-04 18:20:03.365535
+2024-08-04 18:20:03,369 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: status
+2024-08-04 18:20:03,370 INFO    WriterThread:1704914 [datastore.py:open_for_write():87] open: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/run-ilqqu6vj.wandb
+2024-08-04 18:20:03,371 DEBUG   SenderThread:1704914 [sender.py:send():379] send: header
+2024-08-04 18:20:03,371 DEBUG   SenderThread:1704914 [sender.py:send():379] send: run
+2024-08-04 18:20:03,662 INFO    SenderThread:1704914 [dir_watcher.py:__init__():211] watching files in: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files
+2024-08-04 18:20:03,662 INFO    SenderThread:1704914 [sender.py:_start_run_threads():1188] run started: ilqqu6vj with start time 1722810003.365806
+2024-08-04 18:20:03,663 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: check_version
+2024-08-04 18:20:03,663 DEBUG   SenderThread:1704914 [sender.py:send_request():406] send_request: check_version
+2024-08-04 18:20:03,819 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: run_start
+2024-08-04 18:20:03,840 DEBUG   HandlerThread:1704914 [system_info.py:__init__():26] System info init
+2024-08-04 18:20:03,840 DEBUG   HandlerThread:1704914 [system_info.py:__init__():41] System info init done
+2024-08-04 18:20:03,840 INFO    HandlerThread:1704914 [system_monitor.py:start():194] Starting system monitor
+2024-08-04 18:20:03,840 INFO    SystemMonitor:1704914 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-04 18:20:03,840 INFO    HandlerThread:1704914 [system_monitor.py:probe():214] Collecting system info
+2024-08-04 18:20:03,841 INFO    SystemMonitor:1704914 [interfaces.py:start():188] Started cpu monitoring
+2024-08-04 18:20:03,841 INFO    SystemMonitor:1704914 [interfaces.py:start():188] Started disk monitoring
+2024-08-04 18:20:03,842 INFO    SystemMonitor:1704914 [interfaces.py:start():188] Started gpu monitoring
+2024-08-04 18:20:03,842 INFO    SystemMonitor:1704914 [interfaces.py:start():188] Started memory monitoring
+2024-08-04 18:20:03,843 INFO    SystemMonitor:1704914 [interfaces.py:start():188] Started network monitoring
+2024-08-04 18:20:03,855 DEBUG   HandlerThread:1704914 [system_info.py:probe():152] Probing system
+2024-08-04 18:20:04,206 DEBUG   HandlerThread:1704914 [gitlib.py:_init_repo():56] git repository is invalid
+2024-08-04 18:20:04,206 DEBUG   HandlerThread:1704914 [system_info.py:probe():200] Probing system done
+2024-08-04 18:20:04,206 DEBUG   HandlerThread:1704914 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-08-04T22:20:03.856063', 'startedAt': '2024-08-04T22:20:03.349459', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--deepspeed', 'ds_zero2_no_offload.json', '--model_name_or_path', '/home/devsrc/LLMs/bloom-560m', '--use_lora', 'true', '--use_deepspeed', 'true', '--data_path_name', 'yuanzhoulvpi/rename_robot', '--bf16', 'true', '--fp16', 'false', '--output_dir', 'output_refusev2', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '12', '--evaluation_strategy', 'no', '--save_strategy', 'epoch', '--save_total_limit', '3', '--learning_rate', '4e-4', '--logging_steps', '10', '--tf32', 'False', '--model_max_length', '512'), 'state': 'running', 'program': '/home/devsrc/SFT_3/train_sft.py', 'codePathLocal': 'train_sft.py', 'codePath': 'train_sft.py', 'host': 'Morgan', 'username': 'morgan', 'executable': '/home/morgan/miniconda3/envs/llms_ft/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2688.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}, {'current': 2688.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 140.88681411743164}}, 'gpu': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Ti Laptop GPU', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.517932891845703}}
+2024-08-04 18:20:04,206 INFO    HandlerThread:1704914 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-04 18:20:04,206 INFO    HandlerThread:1704914 [system_monitor.py:probe():227] Publishing system info
+2024-08-04 18:20:04,206 DEBUG   HandlerThread:1704914 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-04 18:20:04,663 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/conda-environment.yaml
+2024-08-04 18:20:08,542 DEBUG   HandlerThread:1704914 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-04 18:20:08,543 INFO    HandlerThread:1704914 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-04 18:20:08,551 DEBUG   SenderThread:1704914 [sender.py:send():379] send: files
+2024-08-04 18:20:08,551 INFO    SenderThread:1704914 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-04 18:20:08,551 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 18:20:08,645 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-04 18:20:08,646 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 18:20:08,646 DEBUG   SenderThread:1704914 [sender.py:send_request():406] send_request: python_packages
+2024-08-04 18:20:08,646 DEBUG   SenderThread:1704914 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 18:20:08,647 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:08,664 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/conda-environment.yaml
+2024-08-04 18:20:08,664 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/wandb-metadata.json
+2024-08-04 18:20:08,664 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/requirements.txt
+2024-08-04 18:20:08,787 DEBUG   SenderThread:1704914 [sender.py:send():379] send: telemetry
+2024-08-04 18:20:08,788 DEBUG   SenderThread:1704914 [sender.py:send():379] send: config
+2024-08-04 18:20:08,788 DEBUG   SenderThread:1704914 [sender.py:send():379] send: telemetry
+2024-08-04 18:20:08,788 DEBUG   SenderThread:1704914 [sender.py:send():379] send: metric
+2024-08-04 18:20:08,788 DEBUG   SenderThread:1704914 [sender.py:send():379] send: telemetry
+2024-08-04 18:20:08,788 DEBUG   SenderThread:1704914 [sender.py:send():379] send: metric
+2024-08-04 18:20:08,788 WARNING SenderThread:1704914 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-08-04 18:20:08,788 DEBUG   SenderThread:1704914 [sender.py:send():379] send: telemetry
+2024-08-04 18:20:08,903 INFO    wandb-upload_0:1704914 [upload_job.py:push():130] Uploaded file /tmp/tmppcvh57q4wandb/hq0fm7a3-wandb-metadata.json
+2024-08-04 18:20:09,647 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:09,664 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:10,647 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:11,647 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:11,665 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:12,647 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:13,646 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 18:20:13,647 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:13,665 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:14,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:15,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:15,666 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:16,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:17,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:17,666 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:18,646 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 18:20:18,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:19,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:19,667 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:20,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:21,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:21,667 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:22,649 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:23,645 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-04 18:20:23,645 DEBUG   SenderThread:1704914 [sender.py:send_request():406] send_request: stop_status
+2024-08-04 18:20:23,668 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:23,696 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:23,734 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 18:20:24,649 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:25,656 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:25,669 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:26,656 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:27,656 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:27,670 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:27,775 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-04 18:20:27,777 DEBUG   SenderThread:1704914 [sender.py:send():379] send: metric
+2024-08-04 18:20:27,777 DEBUG   SenderThread:1704914 [sender.py:send():379] send: metric
+2024-08-04 18:20:27,777 DEBUG   SenderThread:1704914 [sender.py:send():379] send: metric
+2024-08-04 18:20:27,777 DEBUG   SenderThread:1704914 [sender.py:send():379] send: metric
+2024-08-04 18:20:27,777 DEBUG   SenderThread:1704914 [sender.py:send():379] send: history
+2024-08-04 18:20:27,777 DEBUG   SenderThread:1704914 [sender.py:send_request():406] send_request: summary_record
+2024-08-04 18:20:27,777 INFO    SenderThread:1704914 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-04 18:20:28,656 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:28,670 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_created():271] file/dir created: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/wandb-summary.json
+2024-08-04 18:20:29,648 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: status_report
+2024-08-04 18:20:29,671 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
+2024-08-04 18:20:29,705 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:30,656 DEBUG   HandlerThread:1704914 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-04 18:20:30,670 INFO    Thread-12 :1704914 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/devsrc/SFT_3/wandb/run-20240804_182003-ilqqu6vj/files/output.log
