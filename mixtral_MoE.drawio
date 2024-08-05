@@ -79,10 +79,10 @@
         <mxCell id="TKEDJPikhGxwTJ4IHC25-25" value="hidden_states" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="360" y="640" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TKEDJPikhGxwTJ4IHC25-26" value="1. 分词的部分" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+        <mxCell id="TKEDJPikhGxwTJ4IHC25-26" value="Tokenizer" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="120" y="80" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TKEDJPikhGxwTJ4IHC25-27" value="2. llama主干部分" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+        <mxCell id="TKEDJPikhGxwTJ4IHC25-27" value="Mixtral Main part" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="160" y="340" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TKEDJPikhGxwTJ4IHC25-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="TKEDJPikhGxwTJ4IHC25-29" target="TKEDJPikhGxwTJ4IHC25-31" edge="1">
