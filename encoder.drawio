@@ -185,8 +185,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="wO50Lo5PLmyDr01lb3ec-16" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="190" y="1928.43" width="570" height="240" as="geometry" />
+        <mxCell id="wO50Lo5PLmyDr01lb3ec-16" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=default;sketch=1;fillWeight=4;hachureGap=8;hachureAngle=45;strokeWidth=2;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1928.43" width="600" height="251.57" as="geometry" />
         </mxCell>
         <mxCell id="-bIso76fyn88DyohU2h1-228" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="1441" y="630" width="870" height="460" as="geometry" />
